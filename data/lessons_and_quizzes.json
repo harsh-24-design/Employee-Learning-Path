@@ -1,0 +1,1363 @@
+{
+  "C101": {
+    "course_id": "C101",
+    "title": "Python Basics",
+    "skill": "Python",
+    "level": 1,
+    "demo_disclaimer": "Demo Learning Material: This course is a demonstration prototype designed for training simulation and does not represent official company-approved certification.",
+    "modules": [
+      {
+        "module_id": "M101-1",
+        "title": "Getting Started with Python & Variables",
+        "description": "Master Python syntax, print statements, variables, primitive types, and type conversion.",
+        "lessons": [
+          {
+            "lesson_id": "L101-1",
+            "title": "Python Syntax, Comments, and Print Function",
+            "module_id": "M101-1",
+            "module_title": "Getting Started with Python & Variables",
+            "duration_minutes": 45,
+            "explanation": "Python is a high-level, interpreted programming language known for its clear, readable syntax and whitespace indentation. Python code executes line-by-line using an interpreter. Comments in Python begin with the hash symbol (#) and are ignored by the runtime, serving as vital documentation for programmers. The print() function is the built-in standard output method used to display strings, numbers, and evaluation results to the console.",
+            "practical_example": "# Demonstrating Python syntax and console output\nmessage = 'Hello, Python Learner!'\nprint(message)\nprint('Python version 3 demo', 2026, sep=' - ')\n\n# Expected Output:\n# Hello, Python Learner!\n# Python version 3 demo - 2026",
+            "key_takeaways": [
+              "Python uses 4-space indentation rather than curly braces to define code blocks.",
+              "Use '#' for single-line comments and triple quotes for multi-line documentation.",
+              "print() outputs values to the terminal and supports parameters like sep and end."
+            ],
+            "exercise": "Write a Python script that declares a variable greeting with the value 'Welcome to Cloud & Data', and prints it alongside your favorite programming goal.",
+            "content": "Python is a high-level, interpreted programming language known for its readable syntax and indentation. Comments begin with #. The print() function outputs strings and values to the console."
+          },
+          {
+            "lesson_id": "L101-2",
+            "title": "Variables, Data Types, and Type Conversion",
+            "module_id": "M101-1",
+            "module_title": "Getting Started with Python & Variables",
+            "duration_minutes": 45,
+            "explanation": "A variable in Python is a named memory reference used to store data values. Unlike statically typed languages like C++ or Java, Python uses dynamic typing, meaning variable types are inferred automatically at runtime. Python's primary primitive data types include int for whole numbers, float for floating-point decimals, str for text enclosed in single or double quotes, and bool for True or False. Type conversion (casting) is performed using built-in constructors like int(), float(), str(), and bool().",
+            "practical_example": "# Variable assignment and type casting\nuser_name = 'Alex'          # str\ncourses_enrolled = 3        # int\ncompletion_rate = 94.5      # float\nis_active = True            # bool\n\nprint(f'Learner {user_name} has {courses_enrolled} courses at {completion_rate}% completion.')\n# Type casting string to integer\nhours_str = '12'\ntotal_hours = int(hours_str) + 5\nprint('Total study hours:', total_hours)\n\n# Expected Output:\n# Learner Alex has 3 courses at 94.5% completion.\n# Total study hours: 17",
+            "key_takeaways": [
+              "Variables are created simply by assigning a value with the '=' operator.",
+              "Python variable names must begin with a letter or underscore and are case-sensitive.",
+              "Use type(variable) to inspect the data type at runtime.",
+              "Explicit casting avoids TypeError when combining text and numbers."
+            ],
+            "exercise": "Declare three variables: product_name (string), unit_price (float), and quantity (integer). Compute and print total_cost formatted as a currency string.",
+            "content": "Variables in Python store data without explicit type declarations. Primitive types include int, float, str, and bool. Cast types explicitly using int(), float(), and str()."
+          }
+        ],
+        "quiz": {
+          "assessment_id": "QZ-M101-1",
+          "skill_id": "Python",
+          "level": 1,
+          "max_score": 100,
+          "passing_score": 70,
+          "rubric": "Score >= 70 demonstrates baseline proficiency in Python syntax, variable declarations, and type casting.",
+          "questions": [
+            {
+              "question_id": "q1",
+              "prompt": "Which operator is used to assign a value to a variable in Python?",
+              "options": [
+                "=",
+                "==",
+                ":=",
+                "->"
+              ],
+              "correct_option_index": 0
+            },
+            {
+              "question_id": "q2",
+              "prompt": "What is the result of type(3.14) in Python?",
+              "options": [
+                "<class 'int'>",
+                "<class 'float'>",
+                "<class 'double'>",
+                "<class 'decimal'>"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q3",
+              "prompt": "What happens when you execute int('42') + 8?",
+              "options": [
+                "Raises a TypeError",
+                "'428'",
+                "50",
+                "42.8"
+              ],
+              "correct_option_index": 2
+            }
+          ]
+        }
+      },
+      {
+        "module_id": "M101-2",
+        "title": "Control Flow & Decision Making",
+        "description": "Control execution order using if/elif/else branching and for/while iteration.",
+        "lessons": [
+          {
+            "lesson_id": "L101-3",
+            "title": "Conditional Logic with if, elif, and else",
+            "module_id": "M101-2",
+            "module_title": "Control Flow & Decision Making",
+            "duration_minutes": 60,
+            "explanation": "Conditional branching allows a Python program to make decisions and execute specific blocks of code based on Boolean truth values. The if statement evaluates an expression; if True, its indented block executes. If False, optional elif (else if) conditions are evaluated in sequential order, and an optional else block acts as the default fallback. Conditions use comparison operators (==, !=, <, >, <=, >=) and logical operators (and, or, not).",
+            "practical_example": "score = 85\n\nif score >= 90:\n    grade = 'Distinction'\nelif score >= 70:\n    grade = 'Passing'\nelse:\n    grade = 'Needs Improvement'\n\nprint(f'Assessment score {score}% receives status: {grade}')\n\n# Expected Output:\n# Assessment score 85% receives status: Passing",
+            "key_takeaways": [
+              "Colons (:) must terminate every if, elif, and else header line.",
+              "Python evaluates 'and' with short-circuit evaluation.",
+              "Consistent 4-space indentation is mandatory to define condition blocks."
+            ],
+            "exercise": "Write a conditional statement that checks weekly study hours: if hours >= 10 print 'Full Training Capacity', if hours >= 5 print 'Balanced Pace', otherwise print 'Light Intensity'.",
+            "content": "Use if, elif, and else for branching logic. Comparisons use ==, !=, <, >, <=, >= and logical operators and, or, not."
+          },
+          {
+            "lesson_id": "L101-4",
+            "title": "Loops and Iteration with for and while",
+            "module_id": "M101-2",
+            "module_title": "Control Flow & Decision Making",
+            "duration_minutes": 60,
+            "explanation": "Loops automate repetitive operations over sequences or until a termination condition is met. The for loop iterates through items in any iterable (like lists, strings, or numbers produced by range()). The while loop continues executing as long as its Boolean condition remains True. Loop control statements include break to exit early, continue to skip the remainder of the current iteration, and pass as an executable placeholder.",
+            "practical_example": "skills = ['Python', 'SQL', 'Cloud', 'Security']\nfor index, skill in enumerate(skills, start=1):\n    if skill == 'Security':\n        print(f'Skipping specialized track: {skill}')\n        continue\n    print(f'Module {index}: Study {skill}')\n\n# Expected Output:\n# Module 1: Study Python\n# Module 2: Study SQL\n# Module 3: Study Cloud\n# Skipping specialized track: Security",
+            "key_takeaways": [
+              "range(start, stop, step) generates numbers up to but excluding stop.",
+              "while loops require modifying loop state variables to avoid infinite loops.",
+              "enumerate() provides both index and value during sequence iteration."
+            ],
+            "exercise": "Create a for loop that iterates through numbers 1 to 10 and prints only the even numbers multiplied by 2.",
+            "content": "for loops iterate over sequences and ranges. while loops repeat while a condition is True. Use break to exit early and continue to skip iterations."
+          }
+        ],
+        "quiz": {
+          "assessment_id": "QZ-M101-2",
+          "skill_id": "Python",
+          "level": 1,
+          "max_score": 100,
+          "passing_score": 70,
+          "rubric": "Score >= 70 demonstrates baseline proficiency in Python conditionals, loop iteration, and control statements.",
+          "questions": [
+            {
+              "question_id": "q1",
+              "prompt": "Which keyword immediately terminates the enclosing loop in Python?",
+              "options": [
+                "stop",
+                "exit",
+                "break",
+                "return"
+              ],
+              "correct_option_index": 2
+            },
+            {
+              "question_id": "q2",
+              "prompt": "What sequence does range(2, 6) produce when iterated over?",
+              "options": [
+                "2, 3, 4, 5, 6",
+                "2, 3, 4, 5",
+                "3, 4, 5, 6",
+                "2, 4, 6"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q3",
+              "prompt": "What keyword is used for 'else if' conditions in Python?",
+              "options": [
+                "elseif",
+                "else if",
+                "elif",
+                "case"
+              ],
+              "correct_option_index": 2
+            }
+          ]
+        }
+      },
+      {
+        "module_id": "M101-3",
+        "title": "Functions & Core Data Structures",
+        "description": "Learn reusable modular functions and Python lists and dictionaries.",
+        "lessons": [
+          {
+            "lesson_id": "L101-5",
+            "title": "Working with Python Lists and Dictionaries",
+            "module_id": "M101-3",
+            "module_title": "Functions & Core Data Structures",
+            "duration_minutes": 60,
+            "explanation": "Lists and dictionaries are fundamental built-in data collections. A list is an ordered, mutable sequence defined with square brackets [] that supports indexing, slicing, appending (append()), and removing (pop()). A dict (dictionary) is an insertion-ordered key-value mapping defined with curly braces {}. Keys must be immutable (like strings or numbers), while values can be any Python object. Accessing keys using .get(key, default) prevents KeyError exceptions.",
+            "practical_example": "course_catalog = ['Python Basics', 'Excel Foundations', 'Cloud Fundamentals']\ncourse_catalog.append('Data Analysis')\n\nlearner_profile = {\n    'name': 'Jordan',\n    'active_course': 'Python Basics',\n    'progress_percent': 65\n}\nlearner_profile['progress_percent'] += 15\n\nprint('Total Courses:', len(course_catalog))\nprint(f\"{learner_profile['name']} is {learner_profile['progress_percent']}% through {learner_profile['active_course']}.\")\n\n# Expected Output:\n# Total Courses: 4\n# Jordan is 80% through Python Basics.",
+            "key_takeaways": [
+              "Lists are 0-indexed; negative index -1 accesses the last element.",
+              "Dictionaries provide fast O(1) key lookups and key-value pairings.",
+              "Use .items() to iterate through key-value pairs simultaneously."
+            ],
+            "exercise": "Create a dictionary representing a course with keys course_id, title, and duration_hours. Add a new key is_completed with value True and print all key-value pairs.",
+            "content": "Lists are mutable ordered sequences ([1, 2, 3]). Dictionaries store key-value pairs ({'key': 'value'}). Access dict keys safely with .get()."
+          },
+          {
+            "lesson_id": "L101-6",
+            "title": "Defining Functions, Parameters, and Return Values",
+            "module_id": "M101-3",
+            "module_title": "Functions & Core Data Structures",
+            "duration_minutes": 60,
+            "explanation": "Functions are reusable, encapsulated blocks of code designed to perform a distinct task. A function is declared using the def keyword followed by the function name, parameter list in parentheses, and a colon. Parameters allow callers to pass input data, including default arguments. The return statement sends computed output back to the caller; without an explicit return, Python functions return None. Functions promote DRY (Don't Repeat Yourself) architecture.",
+            "practical_example": "def calculate_study_pace(total_hours: float, weeks: int = 4) -> float:\n    '''Calculates required weekly study hours.'''\n    if weeks <= 0:\n        raise ValueError('Weeks must be greater than zero.')\n    return round(total_hours / weeks, 2)\n\npace_standard = calculate_study_pace(20)\npace_accelerated = calculate_study_pace(20, weeks=2)\n\nprint(f'Standard 4-week pace: {pace_standard} hrs/week')\nprint(f'Accelerated 2-week pace: {pace_accelerated} hrs/week')\n\n# Expected Output:\n# Standard 4-week pace: 5.0 hrs/week\n# Accelerated 2-week pace: 10.0 hrs/week",
+            "key_takeaways": [
+              "Use 'def function_name(param1, param2):' to define a function.",
+              "Default parameter values must appear after positional parameters.",
+              "Functions can return single values, tuples, or complex data structures."
+            ],
+            "exercise": "Write a function is_passing_grade(score, passing_threshold=70) that returns True if score >= passing_threshold and False otherwise.",
+            "content": "Functions are defined with def and return values using return. Parameters can have default values. Functions help organize code into reusable components."
+          }
+        ],
+        "quiz": {
+          "assessment_id": "QZ-M101-3",
+          "skill_id": "Python",
+          "level": 1,
+          "max_score": 100,
+          "passing_score": 70,
+          "rubric": "Score >= 70 demonstrates baseline proficiency in Python functions, dictionaries, and lists.",
+          "questions": [
+            {
+              "question_id": "q1",
+              "prompt": "What keyword is used to define a function in Python?",
+              "options": [
+                "func",
+                "function",
+                "def",
+                "lambda"
+              ],
+              "correct_option_index": 2
+            },
+            {
+              "question_id": "q2",
+              "prompt": "How do you safely retrieve a value from a dictionary d without risking a KeyError?",
+              "options": [
+                "d[key]",
+                "d.get(key)",
+                "d.fetch(key)",
+                "d.search(key)"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q3",
+              "prompt": "What does a Python function return if it contains no return statement?",
+              "options": [
+                "0",
+                "False",
+                "None",
+                "Empty string"
+              ],
+              "correct_option_index": 2
+            }
+          ]
+        }
+      }
+    ],
+    "lessons": [
+      {
+        "lesson_id": "L101-1",
+        "title": "Python Syntax, Comments, and Print Function",
+        "module_id": "M101-1",
+        "module_title": "Getting Started with Python & Variables",
+        "duration_minutes": 45,
+        "explanation": "Python is a high-level, interpreted programming language known for its clear, readable syntax and whitespace indentation. Python code executes line-by-line using an interpreter. Comments in Python begin with the hash symbol (#) and are ignored by the runtime, serving as vital documentation for programmers. The print() function is the built-in standard output method used to display strings, numbers, and evaluation results to the console.",
+        "practical_example": "# Demonstrating Python syntax and console output\nmessage = 'Hello, Python Learner!'\nprint(message)\nprint('Python version 3 demo', 2026, sep=' - ')\n\n# Expected Output:\n# Hello, Python Learner!\n# Python version 3 demo - 2026",
+        "key_takeaways": [
+          "Python uses 4-space indentation rather than curly braces to define code blocks.",
+          "Use '#' for single-line comments and triple quotes for multi-line documentation.",
+          "print() outputs values to the terminal and supports parameters like sep and end."
+        ],
+        "exercise": "Write a Python script that declares a variable greeting with the value 'Welcome to Cloud & Data', and prints it alongside your favorite programming goal.",
+        "content": "Python is a high-level, interpreted programming language known for its readable syntax and indentation. Comments begin with #. The print() function outputs strings and values to the console."
+      },
+      {
+        "lesson_id": "L101-2",
+        "title": "Variables, Data Types, and Type Conversion",
+        "module_id": "M101-1",
+        "module_title": "Getting Started with Python & Variables",
+        "duration_minutes": 45,
+        "explanation": "A variable in Python is a named memory reference used to store data values. Unlike statically typed languages like C++ or Java, Python uses dynamic typing, meaning variable types are inferred automatically at runtime. Python's primary primitive data types include int for whole numbers, float for floating-point decimals, str for text enclosed in single or double quotes, and bool for True or False. Type conversion (casting) is performed using built-in constructors like int(), float(), str(), and bool().",
+        "practical_example": "# Variable assignment and type casting\nuser_name = 'Alex'          # str\ncourses_enrolled = 3        # int\ncompletion_rate = 94.5      # float\nis_active = True            # bool\n\nprint(f'Learner {user_name} has {courses_enrolled} courses at {completion_rate}% completion.')\n# Type casting string to integer\nhours_str = '12'\ntotal_hours = int(hours_str) + 5\nprint('Total study hours:', total_hours)\n\n# Expected Output:\n# Learner Alex has 3 courses at 94.5% completion.\n# Total study hours: 17",
+        "key_takeaways": [
+          "Variables are created simply by assigning a value with the '=' operator.",
+          "Python variable names must begin with a letter or underscore and are case-sensitive.",
+          "Use type(variable) to inspect the data type at runtime.",
+          "Explicit casting avoids TypeError when combining text and numbers."
+        ],
+        "exercise": "Declare three variables: product_name (string), unit_price (float), and quantity (integer). Compute and print total_cost formatted as a currency string.",
+        "content": "Variables in Python store data without explicit type declarations. Primitive types include int, float, str, and bool. Cast types explicitly using int(), float(), and str()."
+      },
+      {
+        "lesson_id": "L101-3",
+        "title": "Conditional Logic with if, elif, and else",
+        "module_id": "M101-2",
+        "module_title": "Control Flow & Decision Making",
+        "duration_minutes": 60,
+        "explanation": "Conditional branching allows a Python program to make decisions and execute specific blocks of code based on Boolean truth values. The if statement evaluates an expression; if True, its indented block executes. If False, optional elif (else if) conditions are evaluated in sequential order, and an optional else block acts as the default fallback. Conditions use comparison operators (==, !=, <, >, <=, >=) and logical operators (and, or, not).",
+        "practical_example": "score = 85\n\nif score >= 90:\n    grade = 'Distinction'\nelif score >= 70:\n    grade = 'Passing'\nelse:\n    grade = 'Needs Improvement'\n\nprint(f'Assessment score {score}% receives status: {grade}')\n\n# Expected Output:\n# Assessment score 85% receives status: Passing",
+        "key_takeaways": [
+          "Colons (:) must terminate every if, elif, and else header line.",
+          "Python evaluates 'and' with short-circuit evaluation.",
+          "Consistent 4-space indentation is mandatory to define condition blocks."
+        ],
+        "exercise": "Write a conditional statement that checks weekly study hours: if hours >= 10 print 'Full Training Capacity', if hours >= 5 print 'Balanced Pace', otherwise print 'Light Intensity'.",
+        "content": "Use if, elif, and else for branching logic. Comparisons use ==, !=, <, >, <=, >= and logical operators and, or, not."
+      },
+      {
+        "lesson_id": "L101-4",
+        "title": "Loops and Iteration with for and while",
+        "module_id": "M101-2",
+        "module_title": "Control Flow & Decision Making",
+        "duration_minutes": 60,
+        "explanation": "Loops automate repetitive operations over sequences or until a termination condition is met. The for loop iterates through items in any iterable (like lists, strings, or numbers produced by range()). The while loop continues executing as long as its Boolean condition remains True. Loop control statements include break to exit early, continue to skip the remainder of the current iteration, and pass as an executable placeholder.",
+        "practical_example": "skills = ['Python', 'SQL', 'Cloud', 'Security']\nfor index, skill in enumerate(skills, start=1):\n    if skill == 'Security':\n        print(f'Skipping specialized track: {skill}')\n        continue\n    print(f'Module {index}: Study {skill}')\n\n# Expected Output:\n# Module 1: Study Python\n# Module 2: Study SQL\n# Module 3: Study Cloud\n# Skipping specialized track: Security",
+        "key_takeaways": [
+          "range(start, stop, step) generates numbers up to but excluding stop.",
+          "while loops require modifying loop state variables to avoid infinite loops.",
+          "enumerate() provides both index and value during sequence iteration."
+        ],
+        "exercise": "Create a for loop that iterates through numbers 1 to 10 and prints only the even numbers multiplied by 2.",
+        "content": "for loops iterate over sequences and ranges. while loops repeat while a condition is True. Use break to exit early and continue to skip iterations."
+      },
+      {
+        "lesson_id": "L101-5",
+        "title": "Working with Python Lists and Dictionaries",
+        "module_id": "M101-3",
+        "module_title": "Functions & Core Data Structures",
+        "duration_minutes": 60,
+        "explanation": "Lists and dictionaries are fundamental built-in data collections. A list is an ordered, mutable sequence defined with square brackets [] that supports indexing, slicing, appending (append()), and removing (pop()). A dict (dictionary) is an insertion-ordered key-value mapping defined with curly braces {}. Keys must be immutable (like strings or numbers), while values can be any Python object. Accessing keys using .get(key, default) prevents KeyError exceptions.",
+        "practical_example": "course_catalog = ['Python Basics', 'Excel Foundations', 'Cloud Fundamentals']\ncourse_catalog.append('Data Analysis')\n\nlearner_profile = {\n    'name': 'Jordan',\n    'active_course': 'Python Basics',\n    'progress_percent': 65\n}\nlearner_profile['progress_percent'] += 15\n\nprint('Total Courses:', len(course_catalog))\nprint(f\"{learner_profile['name']} is {learner_profile['progress_percent']}% through {learner_profile['active_course']}.\")\n\n# Expected Output:\n# Total Courses: 4\n# Jordan is 80% through Python Basics.",
+        "key_takeaways": [
+          "Lists are 0-indexed; negative index -1 accesses the last element.",
+          "Dictionaries provide fast O(1) key lookups and key-value pairings.",
+          "Use .items() to iterate through key-value pairs simultaneously."
+        ],
+        "exercise": "Create a dictionary representing a course with keys course_id, title, and duration_hours. Add a new key is_completed with value True and print all key-value pairs.",
+        "content": "Lists are mutable ordered sequences ([1, 2, 3]). Dictionaries store key-value pairs ({'key': 'value'}). Access dict keys safely with .get()."
+      },
+      {
+        "lesson_id": "L101-6",
+        "title": "Defining Functions, Parameters, and Return Values",
+        "module_id": "M101-3",
+        "module_title": "Functions & Core Data Structures",
+        "duration_minutes": 60,
+        "explanation": "Functions are reusable, encapsulated blocks of code designed to perform a distinct task. A function is declared using the def keyword followed by the function name, parameter list in parentheses, and a colon. Parameters allow callers to pass input data, including default arguments. The return statement sends computed output back to the caller; without an explicit return, Python functions return None. Functions promote DRY (Don't Repeat Yourself) architecture.",
+        "practical_example": "def calculate_study_pace(total_hours: float, weeks: int = 4) -> float:\n    '''Calculates required weekly study hours.'''\n    if weeks <= 0:\n        raise ValueError('Weeks must be greater than zero.')\n    return round(total_hours / weeks, 2)\n\npace_standard = calculate_study_pace(20)\npace_accelerated = calculate_study_pace(20, weeks=2)\n\nprint(f'Standard 4-week pace: {pace_standard} hrs/week')\nprint(f'Accelerated 2-week pace: {pace_accelerated} hrs/week')\n\n# Expected Output:\n# Standard 4-week pace: 5.0 hrs/week\n# Accelerated 2-week pace: 10.0 hrs/week",
+        "key_takeaways": [
+          "Use 'def function_name(param1, param2):' to define a function.",
+          "Default parameter values must appear after positional parameters.",
+          "Functions can return single values, tuples, or complex data structures."
+        ],
+        "exercise": "Write a function is_passing_grade(score, passing_threshold=70) that returns True if score >= passing_threshold and False otherwise.",
+        "content": "Functions are defined with def and return values using return. Parameters can have default values. Functions help organize code into reusable components."
+      }
+    ],
+    "quiz": {
+      "assessment_id": "QZ-C101",
+      "skill_id": "Python",
+      "level": 1,
+      "max_score": 100,
+      "passing_score": 70,
+      "rubric": "Score >= 70 demonstrates verified baseline proficiency level 1 in Python syntax, loops, and basic functions.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "prompt": "Which of the following creates a variable with the integer value 5 in Python?",
+          "options": [
+            "x = 5",
+            "int x = 5;",
+            "var x = 5",
+            "let x = 5;"
+          ],
+          "correct_option_index": 0
+        },
+        {
+          "question_id": "q2",
+          "prompt": "What keyword is used to define a function in Python?",
+          "options": [
+            "function",
+            "def",
+            "func",
+            "define"
+          ],
+          "correct_option_index": 1
+        },
+        {
+          "question_id": "q3",
+          "prompt": "What does range(3) generate when iterated over?",
+          "options": [
+            "1, 2, 3",
+            "0, 1, 2",
+            "0, 1, 2, 3",
+            "1, 2"
+          ],
+          "correct_option_index": 1
+        }
+      ]
+    }
+  },
+  "C102": {
+    "course_id": "C102",
+    "lessons": [
+      {
+        "lesson_id": "L102-1",
+        "title": "Lists, Tuples, and Dictionaries",
+        "duration_minutes": 90,
+        "content": "Data structures, indexing, slicing, dict key-value operations, set operations."
+      },
+      {
+        "lesson_id": "L102-2",
+        "title": "List Comprehensions & Lambdas",
+        "duration_minutes": 75,
+        "content": "Concise iteration, filtering, anonymous functions, map and filter."
+      },
+      {
+        "lesson_id": "L102-3",
+        "title": "Classes & Object-Oriented Programming",
+        "duration_minutes": 120,
+        "content": "class definitions, __init__, self, methods, inheritance, encapsulation."
+      },
+      {
+        "lesson_id": "L102-4",
+        "title": "File I/O and Exception Handling",
+        "duration_minutes": 90,
+        "content": "with open, reading/writing files, try/except/finally blocks."
+      }
+    ],
+    "quiz": {
+      "assessment_id": "QZ-C102",
+      "skill_id": "Python",
+      "level": 2,
+      "max_score": 100,
+      "passing_score": 75,
+      "rubric": "Score >= 75 demonstrates intermediate proficiency level 2 in Python data structures and OOP.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "prompt": "How do you define a constructor method in a Python class?",
+          "options": [
+            "def constructor(self)",
+            "def __init__(self)",
+            "def main(self)",
+            "def init(self)"
+          ],
+          "correct_option_index": 1
+        },
+        {
+          "question_id": "q2",
+          "prompt": "Which expression produces a list of squares for numbers 0 to 4?",
+          "options": [
+            "[x*2 for x in range(5)]",
+            "[x**2 for x in range(5)]",
+            "(x^2 for x in range(5))",
+            "[sqr(x) in range(5)]"
+          ],
+          "correct_option_index": 1
+        }
+      ]
+    }
+  },
+  "C201": {
+    "course_id": "C201",
+    "lessons": [
+      {
+        "lesson_id": "L201-1",
+        "title": "Relational Databases & SQL Syntax",
+        "duration_minutes": 45,
+        "content": "Tables, rows, primary keys, SELECT and FROM clauses."
+      },
+      {
+        "lesson_id": "L201-2",
+        "title": "Filtering with WHERE and LIKE",
+        "duration_minutes": 60,
+        "content": "Logical operators, AND, OR, IN, BETWEEN, wildcards."
+      },
+      {
+        "lesson_id": "L201-3",
+        "title": "Sorting and Aggregation",
+        "duration_minutes": 60,
+        "content": "ORDER BY, COUNT, SUM, AVG, MIN, MAX."
+      }
+    ],
+    "quiz": {
+      "assessment_id": "QZ-C201",
+      "skill_id": "SQL",
+      "level": 1,
+      "max_score": 100,
+      "passing_score": 70,
+      "rubric": "Score >= 70 demonstrates baseline proficiency level 1 in SQL queries and basic filtering.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "prompt": "Which SQL statement is used to extract data from a database?",
+          "options": [
+            "GET",
+            "EXTRACT",
+            "SELECT",
+            "PULL"
+          ],
+          "correct_option_index": 2
+        },
+        {
+          "question_id": "q2",
+          "prompt": "How do you select only unique values in a column?",
+          "options": [
+            "SELECT DISTINCT col",
+            "SELECT UNIQUE col",
+            "SELECT DIFFERENT col",
+            "SELECT ONLY col"
+          ],
+          "correct_option_index": 0
+        }
+      ]
+    }
+  },
+  "C205": {
+    "course_id": "C205",
+    "lessons": [
+      {
+        "lesson_id": "L205-1",
+        "title": "JOIN Operations (INNER, LEFT, RIGHT)",
+        "duration_minutes": 90,
+        "content": "Relational joins, multi-table queries, join keys and NULL handling."
+      },
+      {
+        "lesson_id": "L205-2",
+        "title": "GROUP BY and HAVING",
+        "duration_minutes": 75,
+        "content": "Aggregating groups, difference between WHERE and HAVING."
+      },
+      {
+        "lesson_id": "L205-3",
+        "title": "Subqueries and Common Table Expressions",
+        "duration_minutes": 90,
+        "content": "Correlated subqueries, WITH clause (CTEs), readability."
+      }
+    ],
+    "quiz": {
+      "assessment_id": "QZ-C205",
+      "skill_id": "SQL",
+      "level": 2,
+      "max_score": 100,
+      "passing_score": 75,
+      "rubric": "Score >= 75 demonstrates intermediate proficiency level 2 in relational joins and complex aggregations.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "prompt": "Which JOIN returns all rows from the left table even if there is no match in the right table?",
+          "options": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "CROSS JOIN"
+          ],
+          "correct_option_index": 1
+        },
+        {
+          "question_id": "q2",
+          "prompt": "Which clause is used to filter aggregated group results?",
+          "options": [
+            "WHERE",
+            "HAVING",
+            "GROUP FILTER",
+            "ORDER BY"
+          ],
+          "correct_option_index": 1
+        }
+      ]
+    }
+  },
+  "C301": {
+    "course_id": "C301",
+    "title": "Excel Foundations",
+    "skill": "Excel",
+    "level": 1,
+    "demo_disclaimer": "Demo Learning Material: This course is a demonstration prototype designed for training simulation and does not represent official company-approved certification.",
+    "modules": [
+      {
+        "module_id": "M301-1",
+        "title": "Workbook Navigation & Cell Referencing",
+        "description": "Master Excel worksheet grid layout, formatting, and relative vs absolute referencing.",
+        "lessons": [
+          {
+            "lesson_id": "L301-1",
+            "title": "Excel Grid, Data Entry, and Cell Formatting",
+            "module_id": "M301-1",
+            "module_title": "Workbook Navigation & Cell Referencing",
+            "duration_minutes": 45,
+            "explanation": "Microsoft Excel organizes spreadsheet data into workbooks containing individual worksheets structured in a two-dimensional grid of columns (labeled A, B, C...) and rows (numbered 1, 2, 3...). The intersection of a column and row is called a cell, identified by its cell address (e.g., A1, C15). Excel recognizes data types including text strings, numerical values, dates, and formulas starting with the equals sign (=). Proper formatting\u2014such as currency ($), percentages (%), decimal places, and text wrapping\u2014transforms raw numerical input into professional financial and analytical reports.",
+            "practical_example": "Quarterly Revenue Data Entry Scenario:\nCell A1: 'Quarter' | Cell B1: 'Revenue'\nCell A2: 'Q1'      | Cell B2: 45000 (Format as Currency: $45,000.00)\nCell A3: 'Q2'      | Cell B3: 52000 (Format as Currency: $52,000.00)\nFormula in Cell B4: =SUM(B2:B3)\n\nExpected Result: $97,000.00",
+            "key_takeaways": [
+              "Every formula in Excel must begin with the equals symbol (=).",
+              "Formatting alters how numbers appear visually without changing the underlying numerical precision.",
+              "Double-click column boundaries to auto-fit text width and prevent '###' display errors."
+            ],
+            "exercise": "Create a simple monthly expense tracker with columns for Category, Budget, and Actual Expense. Format Budget and Actual as Currency with 2 decimal places.",
+            "content": "Excel arranges data in columns and rows intersecting at cells (A1, B2). Formulas begin with =. Format numbers as Currency, Percent, or Dates to enhance readability."
+          },
+          {
+            "lesson_id": "L301-2",
+            "title": "Relative, Absolute, and Mixed Cell References ($A$1)",
+            "module_id": "M301-1",
+            "module_title": "Workbook Navigation & Cell Referencing",
+            "duration_minutes": 45,
+            "explanation": "Cell references define how formulas locate data when copied or filled across other cells. By default, Excel uses Relative References (e.g., A1), which change dynamically relative to the target cell's new position when copied down or across. Absolute References (e.g., $A$1) use dollar signs ($) before the column letter and row number to lock the coordinate permanently, ensuring the referenced cell never shifts. Mixed References lock only the column ($A1) or only the row (A$1), which is essential for two-dimensional calculation tables.",
+            "practical_example": "Calculating sales tax using an absolute reference to rate cell E1:\nCell E1 contains the Sales Tax Rate: 0.08 (8%).\nColumn B contains Item Prices: B2 = 100, B3 = 250.\nIn Cell C2, enter formula: =B2 * $E$1 (Result: $8.00).\nWhen C2 is copied down to C3, the formula updates to =B3 * $E$1 (Result: $20.00), correctly keeping $E$1 fixed.\n\nExpected Result:\nRow 2: $8.00\nRow 3: $20.00",
+            "key_takeaways": [
+              "Press F4 (or Cmd+T on Mac) while typing a formula to toggle between relative, absolute, and mixed references.",
+              "$A$1 locks both column and row; $A1 locks column only; A$1 locks row only.",
+              "Use absolute references whenever all rows must multiply against a single fixed configuration or rate cell."
+            ],
+            "exercise": "Given employee base salaries in column B and a fixed bonus multiplier of 15% in cell D1, write a formula in column C to compute the bonus amount that can be dragged down across all rows.",
+            "content": "Relative references (A1) shift when copied. Absolute references ($A$1) stay locked. Mixed references ($A1 or A$1) lock either column or row."
+          }
+        ],
+        "quiz": {
+          "assessment_id": "QZ-M301-1",
+          "skill_id": "Excel",
+          "level": 1,
+          "max_score": 100,
+          "passing_score": 70,
+          "rubric": "Score >= 70 demonstrates baseline proficiency in Excel workbook navigation, formatting, and cell referencing.",
+          "questions": [
+            {
+              "question_id": "q1",
+              "prompt": "What character is used in Excel to lock a cell reference coordinate and make it absolute?",
+              "options": [
+                "#",
+                "$",
+                "&",
+                "%"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q2",
+              "prompt": "If the formula =A1*B1 in cell C1 is copied down to cell C2, what does it become?",
+              "options": [
+                "=$A$1*$B$1",
+                "=A2*B2",
+                "=A1*B2",
+                "=B1*C1"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q3",
+              "prompt": "What symbol must precede every formula or function in an Excel cell?",
+              "options": [
+                ":",
+                "@",
+                "=",
+                "#"
+              ],
+              "correct_option_index": 2
+            }
+          ]
+        }
+      },
+      {
+        "module_id": "M301-2",
+        "title": "Core Formulas & Logical Functions",
+        "description": "Perform aggregations with SUM, AVERAGE, COUNT, and evaluate conditional logic with IF, AND, OR.",
+        "lessons": [
+          {
+            "lesson_id": "L301-3",
+            "title": "Essential Mathematical Functions (SUM, AVERAGE, MIN, MAX, COUNT)",
+            "module_id": "M301-2",
+            "module_title": "Core Formulas & Logical Functions",
+            "duration_minutes": 60,
+            "explanation": "Excel provides built-in statistical and mathematical functions to aggregate large datasets efficiently without writing manual arithmetic expressions. SUM(range) totals all numbers within a selected range. AVERAGE(range) calculates the arithmetic mean, ignoring text cells. MIN(range) and MAX(range) extract the lowest and highest numerical values, respectively. COUNT(range) counts cells containing numerical values, while COUNTA(range) counts all non-empty cells including text and labels.",
+            "practical_example": "Analyzing test scores in cells C2:C11:\n=SUM(C2:C11)     -> Returns total accumulated points (e.g., 820)\n=AVERAGE(C2:C11) -> Returns average score (e.g., 82.0)\n=MAX(C2:C11)     -> Returns highest score (e.g., 98)\n=MIN(C2:C11)     -> Returns lowest score (e.g., 64)\n=COUNT(C2:C11)   -> Returns 10 students tested",
+            "key_takeaways": [
+              "Colon (:) defines a contiguous range of cells, such as B2:B10.",
+              "Comma (,) separates individual arguments or non-contiguous cells, such as SUM(B2:B5, D2:D5).",
+              "Use COUNTA when counting text entries (like employee names) and COUNT for numbers."
+            ],
+            "exercise": "Write an Excel formula to compute the average sales from range D2 to D30, ignoring blanks.",
+            "content": "Use SUM(range) to add values, AVERAGE(range) for the mean, MIN/MAX for bounds, and COUNT/COUNTA to tally cells."
+          },
+          {
+            "lesson_id": "L301-4",
+            "title": "Conditional Logic with IF, AND, and OR",
+            "module_id": "M301-2",
+            "module_title": "Core Formulas & Logical Functions",
+            "duration_minutes": 60,
+            "explanation": "Logical functions evaluate whether stated criteria are true or false and return customized outputs based on the result. The IF(logical_test, value_if_true, value_if_false) function performs conditional testing. To test multiple conditions simultaneously, nest AND(logical1, logical2...)\u2014which requires all conditions to be true\u2014or OR(logical1, logical2...)\u2014which requires at least one condition to be true\u2014inside the logical test argument of an IF statement.",
+            "practical_example": "Awarding performance bonuses based on score and attendance:\nScore is in B2 (target >= 80) and Attendance is in C2 (target >= 0.90 / 90%).\nFormula in D2:\n=IF(AND(B2>=80, C2>=0.9), 'Qualified', 'Not Qualified')\n\nExpected Result for B2=85 and C2=0.95:\n'Qualified'",
+            "key_takeaways": [
+              "IF takes three arguments: condition, output if true, output if false.",
+              "Text outputs in formulas must be enclosed in double quotes (e.g., 'Pass').",
+              "Combine IF with AND/OR to evaluate complex business rules."
+            ],
+            "exercise": "Write an Excel formula that checks cell A2: if sales in A2 > 50000 return 'High Performer', otherwise return 'Standard'.",
+            "content": "IF(test, true_val, false_val) branches values conditionally. Combine with AND() for all-true requirements and OR() for any-true requirements."
+          }
+        ],
+        "quiz": {
+          "assessment_id": "QZ-M301-2",
+          "skill_id": "Excel",
+          "level": 1,
+          "max_score": 100,
+          "passing_score": 70,
+          "rubric": "Score >= 70 demonstrates baseline proficiency in Excel arithmetic aggregations and conditional IF/AND/OR logic.",
+          "questions": [
+            {
+              "question_id": "q1",
+              "prompt": "Which function counts cells that contain numbers only?",
+              "options": [
+                "COUNTA",
+                "COUNT",
+                "COUNTIF",
+                "NUMCOUNT"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q2",
+              "prompt": "What is the expected output of =IF(10 > 5, 'Yes', 'No')?",
+              "options": [
+                "No",
+                "True",
+                "Yes",
+                "#VALUE!"
+              ],
+              "correct_option_index": 2
+            },
+            {
+              "question_id": "q3",
+              "prompt": "Which function returns TRUE only if all of its arguments evaluate to TRUE?",
+              "options": [
+                "OR",
+                "IF",
+                "AND",
+                "XOR"
+              ],
+              "correct_option_index": 2
+            }
+          ]
+        }
+      },
+      {
+        "module_id": "M301-3",
+        "title": "Modern Lookups & Data Management",
+        "description": "Search datasets using XLOOKUP and VLOOKUP, and manage structured tables.",
+        "lessons": [
+          {
+            "lesson_id": "L301-5",
+            "title": "Data Lookups with XLOOKUP and VLOOKUP",
+            "module_id": "M301-3",
+            "module_title": "Modern Lookups & Data Management",
+            "duration_minutes": 60,
+            "explanation": "Lookup functions search for a specific value in a master data table and retrieve corresponding information from another column. VLOOKUP(lookup_value, table_array, col_index, [range_lookup]) searches vertically in the leftmost column of a table and returns data from the specified column index. The modern XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode]) function overcomes VLOOKUP's limitations: it can search in any direction, defaults to exact match, and provides built-in #N/A handling without requiring extra wrapper functions.",
+            "practical_example": "Looking up an employee's department by Employee ID:\nTable has Employee IDs in column A (A2:A100) and Departments in column C (C2:C100).\nLookup ID is in cell F2 ('E102').\nFormula with XLOOKUP:\n=XLOOKUP(F2, A2:A100, C2:C100, 'Employee Not Found')\n\nExpected Result:\n'Engineering'",
+            "key_takeaways": [
+              "Always specify FALSE (or 0) for the range_lookup parameter in VLOOKUP to ensure exact matches.",
+              "XLOOKUP does not break if new columns are inserted between lookup and return columns.",
+              "XLOOKUP includes an optional if_not_found argument to avoid ugly #N/A errors."
+            ],
+            "exercise": "Write an XLOOKUP formula to find the price of a product with ID in cell G2 from catalog table IDs in A2:A50 and prices in B2:B50.",
+            "content": "VLOOKUP searches the first column for matches. XLOOKUP is more flexible, looks in any direction, defaults to exact matches, and handles missing values."
+          },
+          {
+            "lesson_id": "L301-6",
+            "title": "Sorting, Filtering, and Structured Excel Tables",
+            "module_id": "M301-3",
+            "module_title": "Modern Lookups & Data Management",
+            "duration_minutes": 60,
+            "explanation": "Structured Excel Tables (Ctrl+T or Insert > Table) transform static cell ranges into dynamic data objects with structured referencing, automatic formatting, and integrated filtering. In an Excel Table, adding new rows automatically expands calculated columns and formulas. The Filter tool allows users to isolate records matching specific criteria (such as filtering orders from a single region or dates within the current quarter). Structured references (e.g., Table1[@Revenue] * Table1[@TaxRate]) replace cryptic cell coordinates with human-readable column names.",
+            "practical_example": "Converting sales data range A1:D50 to a structured table:\n1. Select any cell in range and press Ctrl+T.\n2. Ensure 'My table has headers' is checked.\n3. Add a new column 'Profit': type formula =[@Revenue] - [@Expenses].\nExcel automatically propagates the formula down all 50 rows instantly.",
+            "key_takeaways": [
+              "Ctrl+T converts a range into a structured table.",
+              "Tables automatically expand when new data is entered beneath the last row.",
+              "Structured references use [@ColumnName] for row-level calculations."
+            ],
+            "exercise": "Explain the primary advantage of using structured table references over traditional cell references like B2-C2.",
+            "content": "Use Ctrl+T to convert data to an Excel Table. Tables support column filtering, automatic row expansion, and readable structured references."
+          }
+        ],
+        "quiz": {
+          "assessment_id": "QZ-M301-3",
+          "skill_id": "Excel",
+          "level": 1,
+          "max_score": 100,
+          "passing_score": 70,
+          "rubric": "Score >= 70 demonstrates baseline proficiency in Excel XLOOKUP/VLOOKUP functions and structured tables.",
+          "questions": [
+            {
+              "question_id": "q1",
+              "prompt": "What keyboard shortcut turns an ordinary data range into a structured Excel Table?",
+              "options": [
+                "Ctrl + Shift + T",
+                "Ctrl + T",
+                "Alt + T",
+                "Ctrl + E"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q2",
+              "prompt": "What is the primary advantage of XLOOKUP over traditional VLOOKUP?",
+              "options": [
+                "XLOOKUP is only for text",
+                "XLOOKUP can look to the left and defaults to exact match",
+                "XLOOKUP requires columns to be sorted alphabetically",
+                "XLOOKUP only works with numbers"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q3",
+              "prompt": "What does the 4th parameter FALSE indicate in =VLOOKUP('ID101', A1:C50, 2, FALSE)?",
+              "options": [
+                "Approximate match",
+                "Case-sensitive match",
+                "Exact match",
+                "Reverse search"
+              ],
+              "correct_option_index": 2
+            }
+          ]
+        }
+      }
+    ],
+    "lessons": [
+      {
+        "lesson_id": "L301-1",
+        "title": "Excel Grid, Data Entry, and Cell Formatting",
+        "module_id": "M301-1",
+        "module_title": "Workbook Navigation & Cell Referencing",
+        "duration_minutes": 45,
+        "explanation": "Microsoft Excel organizes spreadsheet data into workbooks containing individual worksheets structured in a two-dimensional grid of columns (labeled A, B, C...) and rows (numbered 1, 2, 3...). The intersection of a column and row is called a cell, identified by its cell address (e.g., A1, C15). Excel recognizes data types including text strings, numerical values, dates, and formulas starting with the equals sign (=). Proper formatting\u2014such as currency ($), percentages (%), decimal places, and text wrapping\u2014transforms raw numerical input into professional financial and analytical reports.",
+        "practical_example": "Quarterly Revenue Data Entry Scenario:\nCell A1: 'Quarter' | Cell B1: 'Revenue'\nCell A2: 'Q1'      | Cell B2: 45000 (Format as Currency: $45,000.00)\nCell A3: 'Q2'      | Cell B3: 52000 (Format as Currency: $52,000.00)\nFormula in Cell B4: =SUM(B2:B3)\n\nExpected Result: $97,000.00",
+        "key_takeaways": [
+          "Every formula in Excel must begin with the equals symbol (=).",
+          "Formatting alters how numbers appear visually without changing the underlying numerical precision.",
+          "Double-click column boundaries to auto-fit text width and prevent '###' display errors."
+        ],
+        "exercise": "Create a simple monthly expense tracker with columns for Category, Budget, and Actual Expense. Format Budget and Actual as Currency with 2 decimal places.",
+        "content": "Excel arranges data in columns and rows intersecting at cells (A1, B2). Formulas begin with =. Format numbers as Currency, Percent, or Dates to enhance readability."
+      },
+      {
+        "lesson_id": "L301-2",
+        "title": "Relative, Absolute, and Mixed Cell References ($A$1)",
+        "module_id": "M301-1",
+        "module_title": "Workbook Navigation & Cell Referencing",
+        "duration_minutes": 45,
+        "explanation": "Cell references define how formulas locate data when copied or filled across other cells. By default, Excel uses Relative References (e.g., A1), which change dynamically relative to the target cell's new position when copied down or across. Absolute References (e.g., $A$1) use dollar signs ($) before the column letter and row number to lock the coordinate permanently, ensuring the referenced cell never shifts. Mixed References lock only the column ($A1) or only the row (A$1), which is essential for two-dimensional calculation tables.",
+        "practical_example": "Calculating sales tax using an absolute reference to rate cell E1:\nCell E1 contains the Sales Tax Rate: 0.08 (8%).\nColumn B contains Item Prices: B2 = 100, B3 = 250.\nIn Cell C2, enter formula: =B2 * $E$1 (Result: $8.00).\nWhen C2 is copied down to C3, the formula updates to =B3 * $E$1 (Result: $20.00), correctly keeping $E$1 fixed.\n\nExpected Result:\nRow 2: $8.00\nRow 3: $20.00",
+        "key_takeaways": [
+          "Press F4 (or Cmd+T on Mac) while typing a formula to toggle between relative, absolute, and mixed references.",
+          "$A$1 locks both column and row; $A1 locks column only; A$1 locks row only.",
+          "Use absolute references whenever all rows must multiply against a single fixed configuration or rate cell."
+        ],
+        "exercise": "Given employee base salaries in column B and a fixed bonus multiplier of 15% in cell D1, write a formula in column C to compute the bonus amount that can be dragged down across all rows.",
+        "content": "Relative references (A1) shift when copied. Absolute references ($A$1) stay locked. Mixed references ($A1 or A$1) lock either column or row."
+      },
+      {
+        "lesson_id": "L301-3",
+        "title": "Essential Mathematical Functions (SUM, AVERAGE, MIN, MAX, COUNT)",
+        "module_id": "M301-2",
+        "module_title": "Core Formulas & Logical Functions",
+        "duration_minutes": 60,
+        "explanation": "Excel provides built-in statistical and mathematical functions to aggregate large datasets efficiently without writing manual arithmetic expressions. SUM(range) totals all numbers within a selected range. AVERAGE(range) calculates the arithmetic mean, ignoring text cells. MIN(range) and MAX(range) extract the lowest and highest numerical values, respectively. COUNT(range) counts cells containing numerical values, while COUNTA(range) counts all non-empty cells including text and labels.",
+        "practical_example": "Analyzing test scores in cells C2:C11:\n=SUM(C2:C11)     -> Returns total accumulated points (e.g., 820)\n=AVERAGE(C2:C11) -> Returns average score (e.g., 82.0)\n=MAX(C2:C11)     -> Returns highest score (e.g., 98)\n=MIN(C2:C11)     -> Returns lowest score (e.g., 64)\n=COUNT(C2:C11)   -> Returns 10 students tested",
+        "key_takeaways": [
+          "Colon (:) defines a contiguous range of cells, such as B2:B10.",
+          "Comma (,) separates individual arguments or non-contiguous cells, such as SUM(B2:B5, D2:D5).",
+          "Use COUNTA when counting text entries (like employee names) and COUNT for numbers."
+        ],
+        "exercise": "Write an Excel formula to compute the average sales from range D2 to D30, ignoring blanks.",
+        "content": "Use SUM(range) to add values, AVERAGE(range) for the mean, MIN/MAX for bounds, and COUNT/COUNTA to tally cells."
+      },
+      {
+        "lesson_id": "L301-4",
+        "title": "Conditional Logic with IF, AND, and OR",
+        "module_id": "M301-2",
+        "module_title": "Core Formulas & Logical Functions",
+        "duration_minutes": 60,
+        "explanation": "Logical functions evaluate whether stated criteria are true or false and return customized outputs based on the result. The IF(logical_test, value_if_true, value_if_false) function performs conditional testing. To test multiple conditions simultaneously, nest AND(logical1, logical2...)\u2014which requires all conditions to be true\u2014or OR(logical1, logical2...)\u2014which requires at least one condition to be true\u2014inside the logical test argument of an IF statement.",
+        "practical_example": "Awarding performance bonuses based on score and attendance:\nScore is in B2 (target >= 80) and Attendance is in C2 (target >= 0.90 / 90%).\nFormula in D2:\n=IF(AND(B2>=80, C2>=0.9), 'Qualified', 'Not Qualified')\n\nExpected Result for B2=85 and C2=0.95:\n'Qualified'",
+        "key_takeaways": [
+          "IF takes three arguments: condition, output if true, output if false.",
+          "Text outputs in formulas must be enclosed in double quotes (e.g., 'Pass').",
+          "Combine IF with AND/OR to evaluate complex business rules."
+        ],
+        "exercise": "Write an Excel formula that checks cell A2: if sales in A2 > 50000 return 'High Performer', otherwise return 'Standard'.",
+        "content": "IF(test, true_val, false_val) branches values conditionally. Combine with AND() for all-true requirements and OR() for any-true requirements."
+      },
+      {
+        "lesson_id": "L301-5",
+        "title": "Data Lookups with XLOOKUP and VLOOKUP",
+        "module_id": "M301-3",
+        "module_title": "Modern Lookups & Data Management",
+        "duration_minutes": 60,
+        "explanation": "Lookup functions search for a specific value in a master data table and retrieve corresponding information from another column. VLOOKUP(lookup_value, table_array, col_index, [range_lookup]) searches vertically in the leftmost column of a table and returns data from the specified column index. The modern XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode]) function overcomes VLOOKUP's limitations: it can search in any direction, defaults to exact match, and provides built-in #N/A handling without requiring extra wrapper functions.",
+        "practical_example": "Looking up an employee's department by Employee ID:\nTable has Employee IDs in column A (A2:A100) and Departments in column C (C2:C100).\nLookup ID is in cell F2 ('E102').\nFormula with XLOOKUP:\n=XLOOKUP(F2, A2:A100, C2:C100, 'Employee Not Found')\n\nExpected Result:\n'Engineering'",
+        "key_takeaways": [
+          "Always specify FALSE (or 0) for the range_lookup parameter in VLOOKUP to ensure exact matches.",
+          "XLOOKUP does not break if new columns are inserted between lookup and return columns.",
+          "XLOOKUP includes an optional if_not_found argument to avoid ugly #N/A errors."
+        ],
+        "exercise": "Write an XLOOKUP formula to find the price of a product with ID in cell G2 from catalog table IDs in A2:A50 and prices in B2:B50.",
+        "content": "VLOOKUP searches the first column for matches. XLOOKUP is more flexible, looks in any direction, defaults to exact matches, and handles missing values."
+      },
+      {
+        "lesson_id": "L301-6",
+        "title": "Sorting, Filtering, and Structured Excel Tables",
+        "module_id": "M301-3",
+        "module_title": "Modern Lookups & Data Management",
+        "duration_minutes": 60,
+        "explanation": "Structured Excel Tables (Ctrl+T or Insert > Table) transform static cell ranges into dynamic data objects with structured referencing, automatic formatting, and integrated filtering. In an Excel Table, adding new rows automatically expands calculated columns and formulas. The Filter tool allows users to isolate records matching specific criteria (such as filtering orders from a single region or dates within the current quarter). Structured references (e.g., Table1[@Revenue] * Table1[@TaxRate]) replace cryptic cell coordinates with human-readable column names.",
+        "practical_example": "Converting sales data range A1:D50 to a structured table:\n1. Select any cell in range and press Ctrl+T.\n2. Ensure 'My table has headers' is checked.\n3. Add a new column 'Profit': type formula =[@Revenue] - [@Expenses].\nExcel automatically propagates the formula down all 50 rows instantly.",
+        "key_takeaways": [
+          "Ctrl+T converts a range into a structured table.",
+          "Tables automatically expand when new data is entered beneath the last row.",
+          "Structured references use [@ColumnName] for row-level calculations."
+        ],
+        "exercise": "Explain the primary advantage of using structured table references over traditional cell references like B2-C2.",
+        "content": "Use Ctrl+T to convert data to an Excel Table. Tables support column filtering, automatic row expansion, and readable structured references."
+      }
+    ],
+    "quiz": {
+      "assessment_id": "QZ-C301",
+      "skill_id": "Excel",
+      "level": 1,
+      "max_score": 100,
+      "passing_score": 70,
+      "rubric": "Score >= 70 demonstrates baseline proficiency level 1 in Excel formulas and layout.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "prompt": "What symbol locks a cell coordinate to make it absolute in Excel?",
+          "options": [
+            "#",
+            "$",
+            "@",
+            "&"
+          ],
+          "correct_option_index": 1
+        },
+        {
+          "question_id": "q2",
+          "prompt": "Which formula calculates the arithmetic mean of numbers in cells A1 through A10?",
+          "options": [
+            "=SUM(A1:A10)",
+            "=AVERAGE(A1:A10)",
+            "=MEAN(A1:A10)",
+            "=MEDIAN(A1:A10)"
+          ],
+          "correct_option_index": 1
+        },
+        {
+          "question_id": "q3",
+          "prompt": "What function allows looking up values in both leftward and rightward columns with default exact matching?",
+          "options": [
+            "VLOOKUP",
+            "HLOOKUP",
+            "XLOOKUP",
+            "INDEX"
+          ],
+          "correct_option_index": 2
+        }
+      ]
+    }
+  },
+  "C501": {
+    "course_id": "C501",
+    "title": "Cloud Fundamentals",
+    "skill": "Cloud",
+    "level": 1,
+    "demo_disclaimer": "Demo Learning Material: This course is a demonstration prototype designed for training simulation and does not represent official company-approved certification.",
+    "modules": [
+      {
+        "module_id": "M501-1",
+        "title": "Cloud Concepts & Service Models",
+        "description": "Understand cloud elasticity, on-demand pricing, and IaaS vs PaaS vs SaaS models.",
+        "lessons": [
+          {
+            "lesson_id": "L501-1",
+            "title": "Introduction to Cloud Computing and Benefits",
+            "module_id": "M501-1",
+            "module_title": "Cloud Concepts & Service Models",
+            "duration_minutes": 60,
+            "explanation": "Cloud computing is the on-demand delivery of IT resources\u2014including computing power, storage, networking, and databases\u2014over the internet with pay-as-you-go pricing. Rather than purchasing, deploying, and maintaining physical on-premises servers and data centers, organizations rent technology services from major cloud providers like Google Cloud (GCP), AWS, and Microsoft Azure. Key cloud benefits include Agility (rapid provisioning of resources in minutes), Elasticity (dynamic scaling up or down with fluctuating demand), Cost Savings (shifting capital expenditure / CapEx to operational expenditure / OpEx), and Global Reach (deploying applications across multiple geographic regions with low latency).",
+            "practical_example": "Traditional On-Premises vs Cloud Scenario:\nAn e-commerce business anticipates a 500% traffic surge during Black Friday.\nOn-premises: Requires purchasing 20 physical servers months in advance ($100,000 CapEx) that sit idle for the rest of the year.\nCloud: Provisions auto-scaling virtual machine instances for the 4-day sale period ($600 OpEx) and de-provisions them immediately after the rush.\n\nSavings: >$99,000 CapEx avoided with instant elasticity.",
+            "key_takeaways": [
+              "Cloud computing eliminates upfront capital expenditure (CapEx) in favor of operational expenditure (OpEx).",
+              "Elasticity enables automated scaling to handle workload spikes without over-provisioning.",
+              "High availability and disaster recovery are built into provider regions and zones."
+            ],
+            "exercise": "List three key business differences between on-premises data centers and public cloud infrastructure.",
+            "content": "Cloud computing delivers on-demand IT resources over the internet with pay-as-you-go pricing. It converts CapEx to OpEx and offers agility, elasticity, and global reach."
+          },
+          {
+            "lesson_id": "L501-2",
+            "title": "Cloud Service Models: IaaS, PaaS, and SaaS",
+            "module_id": "M501-1",
+            "module_title": "Cloud Concepts & Service Models",
+            "duration_minutes": 60,
+            "explanation": "Cloud services are categorized into three core delivery models representing varying levels of shared control and management responsibility:\n1. Infrastructure as a Service (IaaS): Provides fundamental compute, networking, and storage building blocks (e.g., Google Compute Engine, AWS EC2, Azure VMs). The customer manages the OS, runtime, and applications, while the provider manages physical hardware and virtualization.\n2. Platform as a Service (PaaS): Provides a managed execution environment for deploying code without managing underlying virtual machines or operating systems (e.g., Google Cloud Run, AWS Elastic Beanstalk, Heroku).\n3. Software as a Service (SaaS): Delivers complete, ready-to-use software applications managed entirely by the vendor and consumed via a web browser or API (e.g., Google Workspace, Microsoft 365, Salesforce).",
+            "practical_example": "Architecting a web application across tiers:\n- IaaS: Running custom configured Linux kernels on Google Compute Engine VMs.\n- PaaS: Deploying a Python FastAPI web container onto Google Cloud Run with automatic scaling from 0 to 100 instances.\n- SaaS: Using Google Gmail and Google Drive for company email and document collaboration.",
+            "key_takeaways": [
+              "IaaS provides the greatest control and flexibility; SaaS provides the lowest management overhead.",
+              "PaaS frees developers to focus purely on business logic and application code.",
+              "As you move from IaaS to SaaS, the cloud vendor manages more of the technology stack."
+            ],
+            "exercise": "Classify the following services into IaaS, PaaS, or SaaS: (a) Google Compute Engine, (b) Google Cloud Run, (c) Microsoft 365.",
+            "content": "IaaS provides raw compute/networking/storage. PaaS provides a managed application platform. SaaS delivers complete managed software applications."
+          }
+        ],
+        "quiz": {
+          "assessment_id": "QZ-M501-1",
+          "skill_id": "Cloud",
+          "level": 1,
+          "max_score": 100,
+          "passing_score": 70,
+          "rubric": "Score >= 70 demonstrates baseline proficiency in cloud computing definitions, financial models, and IaaS/PaaS/SaaS classification.",
+          "questions": [
+            {
+              "question_id": "q1",
+              "prompt": "Which cloud service model provides virtual machines where the customer manages the OS and runtime?",
+              "options": [
+                "SaaS",
+                "IaaS",
+                "PaaS",
+                "FaaS"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q2",
+              "prompt": "What is the financial term for shifting upfront equipment purchases to pay-as-you-go operational billing?",
+              "options": [
+                "CapEx to OpEx",
+                "OpEx to CapEx",
+                "ROI to Debt",
+                "Fixed to Amortized"
+              ],
+              "correct_option_index": 0
+            },
+            {
+              "question_id": "q3",
+              "prompt": "Google Workspace (Docs, Gmail) is an example of which cloud service model?",
+              "options": [
+                "IaaS",
+                "PaaS",
+                "SaaS",
+                "BaaS"
+              ],
+              "correct_option_index": 2
+            }
+          ]
+        }
+      },
+      {
+        "module_id": "M501-2",
+        "title": "Core Cloud Infrastructure & Storage",
+        "description": "Learn VM vs container compute and object vs block vs relational storage architectures.",
+        "lessons": [
+          {
+            "lesson_id": "L501-3",
+            "title": "Cloud Compute: Virtual Machines, Containers, and Serverless",
+            "module_id": "M501-2",
+            "module_title": "Core Cloud Infrastructure & Storage",
+            "duration_minutes": 60,
+            "explanation": "Cloud computing workloads run across three primary compute abstractions:\n1. Virtual Machines (VMs): Virtualized server instances running a complete guest operating system on top of a hypervisor. VMs are ideal for legacy migrations, complex OS-level configurations, and sustained workloads.\n2. Containers: Lightweight, portable packages that bundle application code and dependencies together using OS-level virtualization (Docker, Kubernetes). Containers share the host OS kernel, booting in seconds.\n3. Serverless Compute: Event-driven execution (e.g., Google Cloud Functions, AWS Lambda) where code executes only when triggered by events (such as an HTTP request or file upload). Billing is measured in milliseconds, and idle resources scale to zero at no cost.",
+            "practical_example": "Choosing compute for an image processing pipeline:\n- When a user uploads a profile picture to cloud storage, an event triggers a Serverless Function (resize_image()).\n- The function resizes the thumbnail in 250 milliseconds and terminates.\n- The company pays only for the 250ms of compute time rather than maintaining an idle 24/7 VM.",
+            "key_takeaways": [
+              "Virtual machines virtualize hardware; containers virtualize the operating system.",
+              "Serverless eliminates server management and scales automatically to zero when idle.",
+              "Kubernetes orchestrates container deployment, scaling, and self-healing across compute clusters."
+            ],
+            "exercise": "Under what conditions would you select a serverless function instead of a continuous virtual machine?",
+            "content": "VMs provide full OS virtualization. Containers bundle apps with dependencies sharing the OS kernel. Serverless executes code on events and scales to zero."
+          },
+          {
+            "lesson_id": "L501-4",
+            "title": "Cloud Storage and Databases (Object, Block, File, SQL vs NoSQL)",
+            "module_id": "M501-2",
+            "module_title": "Core Cloud Infrastructure & Storage",
+            "duration_minutes": 60,
+            "explanation": "Cloud storage is categorized into three primary architectures:\n1. Object Storage (e.g., Google Cloud Storage, AWS S3): Stores unstructured data (images, videos, backups, training datasets) as discrete objects with metadata and a globally unique URL. Offers virtually infinite scaling and high durability (99.999999999%).\n2. Block Storage (e.g., Persistent Disks, AWS EBS): High-performance storage volumes formatted with file systems and attached directly to VMs for databases and OS boot drives.\n3. File Storage (e.g., Cloud Filestore, AWS EFS): Network-attached shared storage accessible concurrently by multiple VMs via protocols like NFS.\nFor structured data, Relational Databases (Cloud SQL, PostgreSQL, MySQL) provide ACID guarantees and complex JOIN queries, whereas NoSQL Databases (Firestore, MongoDB, Bigtable) deliver massive horizontal scaling and flexible schema models for high-throughput applications.",
+            "practical_example": "Data architecture for a modern mobile app:\n- User profile photos stored in Object Storage (gs://app-user-photos/user101.jpg).\n- Transaction records and accounting ledgers stored in Relational PostgreSQL with strict ACID transactions.\n- Real-time chat messages and mobile session states stored in NoSQL Firestore for millisecond synchronization.",
+            "key_takeaways": [
+              "Object storage is best for unstructured, static media files and large-scale backups.",
+              "Block storage delivers low-latency disk IOPS required by active database engines.",
+              "Relational SQL ensures transactional consistency; NoSQL excels at high-velocity, flexible-schema scaling."
+            ],
+            "exercise": "Which storage type would you choose for storing 10 terabytes of medical scan images: Object storage, Block storage, or Relational database? Explain why.",
+            "content": "Object storage handles unstructured files and backups. Block storage provides VM disks. Relational databases support ACID queries; NoSQL supports scalable schemas."
+          }
+        ],
+        "quiz": {
+          "assessment_id": "QZ-M501-2",
+          "skill_id": "Cloud",
+          "level": 1,
+          "max_score": 100,
+          "passing_score": 70,
+          "rubric": "Score >= 70 demonstrates baseline proficiency in cloud compute abstractions, storage types, and SQL/NoSQL databases.",
+          "questions": [
+            {
+              "question_id": "q1",
+              "prompt": "Which cloud storage type stores data as key-value objects with metadata and is accessed via HTTP APIs?",
+              "options": [
+                "Block Storage",
+                "Object Storage",
+                "File Storage",
+                "RAM Disk"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q2",
+              "prompt": "What is the primary benefit of serverless compute (like Cloud Functions)?",
+              "options": [
+                "Dedicated root access",
+                "Pay only for actual execution time and scale to zero",
+                "Direct hardware control",
+                "Infinite memory reservation"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q3",
+              "prompt": "Which database type is best suited for relational schemas with multi-table ACID transactions?",
+              "options": [
+                "NoSQL Key-Value",
+                "Object Store",
+                "Relational SQL Database",
+                "Time Series Cache"
+              ],
+              "correct_option_index": 2
+            }
+          ]
+        }
+      },
+      {
+        "module_id": "M501-3",
+        "title": "Security, Architecture & Cost Governance",
+        "description": "Master the Shared Responsibility Model, IAM least privilege, and high availability.",
+        "lessons": [
+          {
+            "lesson_id": "L501-5",
+            "title": "Shared Responsibility Model and Identity & Access Management (IAM)",
+            "module_id": "M501-3",
+            "module_title": "Security, Architecture & Cost Governance",
+            "duration_minutes": 60,
+            "explanation": "Cloud security operates under the Shared Responsibility Model, which defines security obligations between the cloud provider and the customer:\n- Security OF the Cloud: The cloud provider is responsible for securing physical facilities, data center hardware, host virtualization layers, and global network infrastructure.\n- Security IN the Cloud: The customer is responsible for configuring access permissions, protecting customer data, securing operating systems and firewall rules (in IaaS), and setting strong authentication policies.\nIdentity & Access Management (IAM) governs authentication ('who you are') and authorization ('what you can do'). IAM follows the Principle of Least Privilege: granting identities only the minimum permissions necessary to complete their job roles.",
+            "practical_example": "Applying IAM Least Privilege:\nA junior data analyst requires access to query a sales analytics database in GCP.\n- Insecure: Granting broad 'Owner' or 'Editor' role across the entire cloud project.\n- Secure (Least Privilege): Assigning only the predefined role roles/bigquery.dataViewer restricted exclusively to the sales_marts dataset.",
+            "key_takeaways": [
+              "The cloud provider secures physical infrastructure; the customer secures their data, code, and access credentials.",
+              "Principle of Least Privilege: never grant more access permissions than strictly required.",
+              "Always enforce Multi-Factor Authentication (MFA) and avoid sharing root/admin service accounts."
+            ],
+            "exercise": "In an IaaS deployment (virtual machines), who is responsible for applying operating system security patches: the cloud provider or the customer?",
+            "content": "The Shared Responsibility Model divides security duties: provider secures infrastructure, customer secures data and access. IAM enforces Least Privilege."
+          },
+          {
+            "lesson_id": "L501-6",
+            "title": "High Availability, Scalability, and Cloud Cost Optimization",
+            "module_id": "M501-3",
+            "module_title": "Security, Architecture & Cost Governance",
+            "duration_minutes": 60,
+            "explanation": "Enterprise cloud architectures are designed for resiliency, continuous availability, and cost efficiency. High Availability (HA) ensures systems remain operational despite component failures, accomplished by deploying redundant resources across multiple Availability Zones (independent data centers within a region) and geographic Regions. Scalability refers to a system's ability to handle growing workloads: Vertical Scaling ('scaling up') adds more CPU/RAM to a single instance, whereas Horizontal Scaling ('scaling out') adds more instance replicas behind a load balancer. Cloud Cost Optimization relies on monitoring budgets, configuring billing alerts, leveraging auto-scaling to avoid over-provisioning, and utilizing commitment discounts (Committed Use Discounts / Reserved Instances) for steady-state baseline workloads.",
+            "practical_example": "Designing a resilient, cost-effective architecture:\n- Front-end web servers deployed in an Auto-Scaling Group distributed across 3 Availability Zones behind a Cloud Load Balancer.\n- Baseline steady capacity (2 instances) purchased with a 1-year Committed Use Discount (saving 40%).\n- Traffic surges automatically trigger ephemeral instances that scale back down when CPU drops below 60%.",
+            "key_takeaways": [
+              "Availability Zones are isolated physical data center locations within a region with low-latency private interconnects.",
+              "Horizontal scaling (adding more instances) provides better fault tolerance than vertical scaling.",
+              "Set budget thresholds and billing alerts to prevent unexpected cloud expenditure."
+            ],
+            "exercise": "What is the difference between an Availability Zone and a Cloud Region?",
+            "content": "Deploy across multiple Availability Zones for High Availability. Scale horizontally for elasticity. Use budgets and commitment discounts to optimize cloud costs."
+          }
+        ],
+        "quiz": {
+          "assessment_id": "QZ-M501-3",
+          "skill_id": "Cloud",
+          "level": 1,
+          "max_score": 100,
+          "passing_score": 70,
+          "rubric": "Score >= 70 demonstrates baseline proficiency in cloud security shared responsibility, IAM least privilege, and high availability architecture.",
+          "questions": [
+            {
+              "question_id": "q1",
+              "prompt": "Under the Shared Responsibility Model for IaaS, who is responsible for installing OS security updates?",
+              "options": [
+                "Cloud Provider",
+                "Hardware Manufacturer",
+                "Customer",
+                "Network Carrier"
+              ],
+              "correct_option_index": 2
+            },
+            {
+              "question_id": "q2",
+              "prompt": "What is the Principle of Least Privilege in cloud IAM?",
+              "options": [
+                "Grant all users admin rights for convenience",
+                "Grant only the minimum permissions required for a role",
+                "Rotate root passwords yearly",
+                "Use single passwords for team accounts"
+              ],
+              "correct_option_index": 1
+            },
+            {
+              "question_id": "q3",
+              "prompt": "What distinguishes Horizontal Scaling from Vertical Scaling?",
+              "options": [
+                "Horizontal adds more instances; Vertical increases instance size",
+                "Horizontal is always free",
+                "Vertical adds more data centers",
+                "Horizontal modifies software architecture only"
+              ],
+              "correct_option_index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "lessons": [
+      {
+        "lesson_id": "L501-1",
+        "title": "Introduction to Cloud Computing and Benefits",
+        "module_id": "M501-1",
+        "module_title": "Cloud Concepts & Service Models",
+        "duration_minutes": 60,
+        "explanation": "Cloud computing is the on-demand delivery of IT resources\u2014including computing power, storage, networking, and databases\u2014over the internet with pay-as-you-go pricing. Rather than purchasing, deploying, and maintaining physical on-premises servers and data centers, organizations rent technology services from major cloud providers like Google Cloud (GCP), AWS, and Microsoft Azure. Key cloud benefits include Agility (rapid provisioning of resources in minutes), Elasticity (dynamic scaling up or down with fluctuating demand), Cost Savings (shifting capital expenditure / CapEx to operational expenditure / OpEx), and Global Reach (deploying applications across multiple geographic regions with low latency).",
+        "practical_example": "Traditional On-Premises vs Cloud Scenario:\nAn e-commerce business anticipates a 500% traffic surge during Black Friday.\nOn-premises: Requires purchasing 20 physical servers months in advance ($100,000 CapEx) that sit idle for the rest of the year.\nCloud: Provisions auto-scaling virtual machine instances for the 4-day sale period ($600 OpEx) and de-provisions them immediately after the rush.\n\nSavings: >$99,000 CapEx avoided with instant elasticity.",
+        "key_takeaways": [
+          "Cloud computing eliminates upfront capital expenditure (CapEx) in favor of operational expenditure (OpEx).",
+          "Elasticity enables automated scaling to handle workload spikes without over-provisioning.",
+          "High availability and disaster recovery are built into provider regions and zones."
+        ],
+        "exercise": "List three key business differences between on-premises data centers and public cloud infrastructure.",
+        "content": "Cloud computing delivers on-demand IT resources over the internet with pay-as-you-go pricing. It converts CapEx to OpEx and offers agility, elasticity, and global reach."
+      },
+      {
+        "lesson_id": "L501-2",
+        "title": "Cloud Service Models: IaaS, PaaS, and SaaS",
+        "module_id": "M501-1",
+        "module_title": "Cloud Concepts & Service Models",
+        "duration_minutes": 60,
+        "explanation": "Cloud services are categorized into three core delivery models representing varying levels of shared control and management responsibility:\n1. Infrastructure as a Service (IaaS): Provides fundamental compute, networking, and storage building blocks (e.g., Google Compute Engine, AWS EC2, Azure VMs). The customer manages the OS, runtime, and applications, while the provider manages physical hardware and virtualization.\n2. Platform as a Service (PaaS): Provides a managed execution environment for deploying code without managing underlying virtual machines or operating systems (e.g., Google Cloud Run, AWS Elastic Beanstalk, Heroku).\n3. Software as a Service (SaaS): Delivers complete, ready-to-use software applications managed entirely by the vendor and consumed via a web browser or API (e.g., Google Workspace, Microsoft 365, Salesforce).",
+        "practical_example": "Architecting a web application across tiers:\n- IaaS: Running custom configured Linux kernels on Google Compute Engine VMs.\n- PaaS: Deploying a Python FastAPI web container onto Google Cloud Run with automatic scaling from 0 to 100 instances.\n- SaaS: Using Google Gmail and Google Drive for company email and document collaboration.",
+        "key_takeaways": [
+          "IaaS provides the greatest control and flexibility; SaaS provides the lowest management overhead.",
+          "PaaS frees developers to focus purely on business logic and application code.",
+          "As you move from IaaS to SaaS, the cloud vendor manages more of the technology stack."
+        ],
+        "exercise": "Classify the following services into IaaS, PaaS, or SaaS: (a) Google Compute Engine, (b) Google Cloud Run, (c) Microsoft 365.",
+        "content": "IaaS provides raw compute/networking/storage. PaaS provides a managed application platform. SaaS delivers complete managed software applications."
+      },
+      {
+        "lesson_id": "L501-3",
+        "title": "Cloud Compute: Virtual Machines, Containers, and Serverless",
+        "module_id": "M501-2",
+        "module_title": "Core Cloud Infrastructure & Storage",
+        "duration_minutes": 60,
+        "explanation": "Cloud computing workloads run across three primary compute abstractions:\n1. Virtual Machines (VMs): Virtualized server instances running a complete guest operating system on top of a hypervisor. VMs are ideal for legacy migrations, complex OS-level configurations, and sustained workloads.\n2. Containers: Lightweight, portable packages that bundle application code and dependencies together using OS-level virtualization (Docker, Kubernetes). Containers share the host OS kernel, booting in seconds.\n3. Serverless Compute: Event-driven execution (e.g., Google Cloud Functions, AWS Lambda) where code executes only when triggered by events (such as an HTTP request or file upload). Billing is measured in milliseconds, and idle resources scale to zero at no cost.",
+        "practical_example": "Choosing compute for an image processing pipeline:\n- When a user uploads a profile picture to cloud storage, an event triggers a Serverless Function (resize_image()).\n- The function resizes the thumbnail in 250 milliseconds and terminates.\n- The company pays only for the 250ms of compute time rather than maintaining an idle 24/7 VM.",
+        "key_takeaways": [
+          "Virtual machines virtualize hardware; containers virtualize the operating system.",
+          "Serverless eliminates server management and scales automatically to zero when idle.",
+          "Kubernetes orchestrates container deployment, scaling, and self-healing across compute clusters."
+        ],
+        "exercise": "Under what conditions would you select a serverless function instead of a continuous virtual machine?",
+        "content": "VMs provide full OS virtualization. Containers bundle apps with dependencies sharing the OS kernel. Serverless executes code on events and scales to zero."
+      },
+      {
+        "lesson_id": "L501-4",
+        "title": "Cloud Storage and Databases (Object, Block, File, SQL vs NoSQL)",
+        "module_id": "M501-2",
+        "module_title": "Core Cloud Infrastructure & Storage",
+        "duration_minutes": 60,
+        "explanation": "Cloud storage is categorized into three primary architectures:\n1. Object Storage (e.g., Google Cloud Storage, AWS S3): Stores unstructured data (images, videos, backups, training datasets) as discrete objects with metadata and a globally unique URL. Offers virtually infinite scaling and high durability (99.999999999%).\n2. Block Storage (e.g., Persistent Disks, AWS EBS): High-performance storage volumes formatted with file systems and attached directly to VMs for databases and OS boot drives.\n3. File Storage (e.g., Cloud Filestore, AWS EFS): Network-attached shared storage accessible concurrently by multiple VMs via protocols like NFS.\nFor structured data, Relational Databases (Cloud SQL, PostgreSQL, MySQL) provide ACID guarantees and complex JOIN queries, whereas NoSQL Databases (Firestore, MongoDB, Bigtable) deliver massive horizontal scaling and flexible schema models for high-throughput applications.",
+        "practical_example": "Data architecture for a modern mobile app:\n- User profile photos stored in Object Storage (gs://app-user-photos/user101.jpg).\n- Transaction records and accounting ledgers stored in Relational PostgreSQL with strict ACID transactions.\n- Real-time chat messages and mobile session states stored in NoSQL Firestore for millisecond synchronization.",
+        "key_takeaways": [
+          "Object storage is best for unstructured, static media files and large-scale backups.",
+          "Block storage delivers low-latency disk IOPS required by active database engines.",
+          "Relational SQL ensures transactional consistency; NoSQL excels at high-velocity, flexible-schema scaling."
+        ],
+        "exercise": "Which storage type would you choose for storing 10 terabytes of medical scan images: Object storage, Block storage, or Relational database? Explain why.",
+        "content": "Object storage handles unstructured files and backups. Block storage provides VM disks. Relational databases support ACID queries; NoSQL supports scalable schemas."
+      },
+      {
+        "lesson_id": "L501-5",
+        "title": "Shared Responsibility Model and Identity & Access Management (IAM)",
+        "module_id": "M501-3",
+        "module_title": "Security, Architecture & Cost Governance",
+        "duration_minutes": 60,
+        "explanation": "Cloud security operates under the Shared Responsibility Model, which defines security obligations between the cloud provider and the customer:\n- Security OF the Cloud: The cloud provider is responsible for securing physical facilities, data center hardware, host virtualization layers, and global network infrastructure.\n- Security IN the Cloud: The customer is responsible for configuring access permissions, protecting customer data, securing operating systems and firewall rules (in IaaS), and setting strong authentication policies.\nIdentity & Access Management (IAM) governs authentication ('who you are') and authorization ('what you can do'). IAM follows the Principle of Least Privilege: granting identities only the minimum permissions necessary to complete their job roles.",
+        "practical_example": "Applying IAM Least Privilege:\nA junior data analyst requires access to query a sales analytics database in GCP.\n- Insecure: Granting broad 'Owner' or 'Editor' role across the entire cloud project.\n- Secure (Least Privilege): Assigning only the predefined role roles/bigquery.dataViewer restricted exclusively to the sales_marts dataset.",
+        "key_takeaways": [
+          "The cloud provider secures physical infrastructure; the customer secures their data, code, and access credentials.",
+          "Principle of Least Privilege: never grant more access permissions than strictly required.",
+          "Always enforce Multi-Factor Authentication (MFA) and avoid sharing root/admin service accounts."
+        ],
+        "exercise": "In an IaaS deployment (virtual machines), who is responsible for applying operating system security patches: the cloud provider or the customer?",
+        "content": "The Shared Responsibility Model divides security duties: provider secures infrastructure, customer secures data and access. IAM enforces Least Privilege."
+      },
+      {
+        "lesson_id": "L501-6",
+        "title": "High Availability, Scalability, and Cloud Cost Optimization",
+        "module_id": "M501-3",
+        "module_title": "Security, Architecture & Cost Governance",
+        "duration_minutes": 60,
+        "explanation": "Enterprise cloud architectures are designed for resiliency, continuous availability, and cost efficiency. High Availability (HA) ensures systems remain operational despite component failures, accomplished by deploying redundant resources across multiple Availability Zones (independent data centers within a region) and geographic Regions. Scalability refers to a system's ability to handle growing workloads: Vertical Scaling ('scaling up') adds more CPU/RAM to a single instance, whereas Horizontal Scaling ('scaling out') adds more instance replicas behind a load balancer. Cloud Cost Optimization relies on monitoring budgets, configuring billing alerts, leveraging auto-scaling to avoid over-provisioning, and utilizing commitment discounts (Committed Use Discounts / Reserved Instances) for steady-state baseline workloads.",
+        "practical_example": "Designing a resilient, cost-effective architecture:\n- Front-end web servers deployed in an Auto-Scaling Group distributed across 3 Availability Zones behind a Cloud Load Balancer.\n- Baseline steady capacity (2 instances) purchased with a 1-year Committed Use Discount (saving 40%).\n- Traffic surges automatically trigger ephemeral instances that scale back down when CPU drops below 60%.",
+        "key_takeaways": [
+          "Availability Zones are isolated physical data center locations within a region with low-latency private interconnects.",
+          "Horizontal scaling (adding more instances) provides better fault tolerance than vertical scaling.",
+          "Set budget thresholds and billing alerts to prevent unexpected cloud expenditure."
+        ],
+        "exercise": "What is the difference between an Availability Zone and a Cloud Region?",
+        "content": "Deploy across multiple Availability Zones for High Availability. Scale horizontally for elasticity. Use budgets and commitment discounts to optimize cloud costs."
+      }
+    ],
+    "quiz": {
+      "assessment_id": "QZ-C501",
+      "skill_id": "Cloud",
+      "level": 1,
+      "max_score": 100,
+      "passing_score": 70,
+      "rubric": "Score >= 70 demonstrates verified baseline proficiency level 1 in cloud concepts, compute/storage, and security.",
+      "questions": [
+        {
+          "question_id": "q1",
+          "prompt": "Which service model gives users control over the operating system, storage, and deployed applications?",
+          "options": [
+            "SaaS",
+            "IaaS",
+            "PaaS",
+            "DBaaS"
+          ],
+          "correct_option_index": 1
+        },
+        {
+          "question_id": "q2",
+          "prompt": "What cloud capability allows automated scaling of resources in response to traffic demand?",
+          "options": [
+            "Elasticity",
+            "Virtualization",
+            "Durability",
+            "Latency"
+          ],
+          "correct_option_index": 0
+        },
+        {
+          "question_id": "q3",
+          "prompt": "Under the Shared Responsibility Model, what is the customer always responsible for securing?",
+          "options": [
+            "Data Center Physical Perimeters",
+            "Hypervisors",
+            "Their own Customer Data and Access Credentials",
+            "Network Fiber Optic Lines"
+          ],
+          "correct_option_index": 2
+        }
+      ]
+    }
+  }
+}

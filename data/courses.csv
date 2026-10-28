@@ -1,0 +1,13 @@
+course_id,title,skill,level,hours,cost,prerequisite_id
+C101,Python Basics,Python,1,12,0,
+C102,Intermediate Python & OOP,Python,2,20,100,C101
+C103,Advanced Python for Data Science,Python,3,24,200,C102
+C201,SQL Basics,SQL,1,10,0,
+C205,Data Analysis with SQL,SQL,2,16,150,C201
+C206,Advanced SQL & Warehousing,SQL,3,20,250,C205
+C301,Excel Foundations,Excel,1,8,0,
+C302,Advanced Excel & Modeling,Excel,2,14,80,C301
+C303,Business Intelligence with Excel,Excel,3,16,120,C302
+C401,Data Visualization Fundamentals,PowerBI,1,10,0,
+C501,Cloud Fundamentals,Cloud,1,15,0,
+C502,Cloud Data Architectures,Cloud,2,25,200,C501

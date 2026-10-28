@@ -1,0 +1,201 @@
+[
+  {
+    "course_id": "COUR-PY-01",
+    "title": "Programming for Everybody (Python Basics)",
+    "provider": "University of Michigan",
+    "platform": "Coursera",
+    "description": "Learn the fundamentals of programming in Python including variables, conditionals, loops, and functions.",
+    "skill": "Python",
+    "level": 1,
+    "hours": 18.0,
+    "cost": 49.0,
+    "currency": "USD",
+    "pricing_model": "subscription",
+    "subscription_monthly_cost": 49.0,
+    "prerequisite_id": null,
+    "is_foundation": false,
+    "source_url": "https://www.coursera.org/learn/python",
+    "catalogue_status": "approved",
+    "source_verification_status": "verified",
+    "last_checked_date": "2026-10-25",
+    "certificate_info": {
+      "available": true,
+      "type": "assessed_certificate",
+      "issuer": "University of Michigan / Coursera",
+      "is_included_in_price": true,
+      "separate_certificate_fee": 0.0,
+      "verification_url": "https://www.coursera.org/verify",
+      "exam_requirements": "Passing score >= 80% on all weekly graded quizzes and assignments."
+    },
+    "lessons": [
+      { "lesson_id": "L-CPY-1", "title": "Why We Program", "duration_minutes": 60, "content": "Computer hardware architecture and Python syntax basics." },
+      { "lesson_id": "L-CPY-2", "title": "Variables, Expressions and Statements", "duration_minutes": 90, "content": "Types, input/output, and operators." },
+      { "lesson_id": "L-CPY-3", "title": "Conditional Execution", "duration_minutes": 90, "content": "if/else logic and boolean expressions." }
+    ]
+  },
+  {
+    "course_id": "COUR-DA-01",
+    "title": "Google Data Analytics Professional Certificate",
+    "provider": "Google",
+    "platform": "Coursera",
+    "description": "Comprehensive career credential covering spreadsheets, SQL, Tableau, R programming, and case studies.",
+    "skill": "Data Analysis",
+    "level": 2,
+    "hours": 120.0,
+    "cost": 196.0,
+    "currency": "USD",
+    "pricing_model": "subscription",
+    "subscription_monthly_cost": 49.0,
+    "prerequisite_id": "C101",
+    "is_foundation": false,
+    "source_url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+    "catalogue_status": "approved",
+    "source_verification_status": "verified",
+    "last_checked_date": "2026-10-25",
+    "certificate_info": {
+      "available": true,
+      "type": "professional_certificate",
+      "issuer": "Google Career Certificates",
+      "is_included_in_price": true,
+      "separate_certificate_fee": 0.0,
+      "verification_url": "https://www.credly.com/org/google",
+      "exam_requirements": "Completion of 8 courses and hands-on capstone portfolio project."
+    },
+    "lessons": [
+      { "lesson_id": "L-GDA-1", "title": "Foundations: Data, Data, Everywhere", "duration_minutes": 120, "content": "Data ecosystems and analytical thinking." },
+      { "lesson_id": "L-GDA-2", "title": "Ask Questions to Make Data-Driven Decisions", "duration_minutes": 120, "content": "Structured problem solving and metrics." }
+    ]
+  },
+  {
+    "course_id": "EDX-CS50-01",
+    "title": "CS50: Introduction to Computer Science",
+    "provider": "Harvard University",
+    "platform": "edX",
+    "description": "An introduction to the intellectual enterprises of computer science and the art of programming.",
+    "skill": "Computer Science",
+    "level": 1,
+    "hours": 80.0,
+    "cost": 0.0,
+    "currency": "USD",
+    "pricing_model": "free",
+    "subscription_monthly_cost": null,
+    "prerequisite_id": null,
+    "is_foundation": true,
+    "source_url": "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x",
+    "catalogue_status": "approved",
+    "source_verification_status": "verified",
+    "last_checked_date": "2026-10-25",
+    "certificate_info": {
+      "available": true,
+      "type": "assessed_certificate",
+      "issuer": "HarvardX / edX",
+      "is_included_in_price": false,
+      "separate_certificate_fee": 149.0,
+      "verification_url": "https://credentials.edx.org",
+      "exam_requirements": "Score >= 70% on all problem sets and final project."
+    },
+    "lessons": [
+      { "lesson_id": "L-CS50-1", "title": "Computational Thinking & Scratch", "duration_minutes": 90, "content": "Algorithms, pseudocode, and state." },
+      { "lesson_id": "L-CS50-2", "title": "C Syntax & Memory", "duration_minutes": 120, "content": "Compilation, data types, and memory pointers." }
+    ]
+  },
+  {
+    "course_id": "UDEMY-SQL-01",
+    "title": "The Complete SQL Bootcamp: Zero to Hero",
+    "provider": "Jose Portilla",
+    "platform": "Udemy",
+    "description": "Master PostgreSQL queries, group by, subqueries, string functions, and table creation.",
+    "skill": "SQL",
+    "level": 2,
+    "hours": 12.0,
+    "cost": 29.99,
+    "currency": "USD",
+    "pricing_model": "paid_one_time",
+    "subscription_monthly_cost": null,
+    "prerequisite_id": "C201",
+    "is_foundation": false,
+    "source_url": "https://www.udemy.com/course/the-complete-sql-bootcamp/",
+    "catalogue_status": "approved",
+    "source_verification_status": "verified",
+    "last_checked_date": "2026-10-25",
+    "certificate_info": {
+      "available": true,
+      "type": "completion_certificate",
+      "issuer": "Udemy",
+      "is_included_in_price": true,
+      "separate_certificate_fee": 0.0,
+      "verification_url": "https://www.udemy.com/certificate",
+      "exam_requirements": "Complete 100% of video lectures and coding exercises."
+    },
+    "lessons": [
+      { "lesson_id": "L-USQL-1", "title": "SQL Statement Fundamentals", "duration_minutes": 60, "content": "SELECT, WHERE, COUNT, DISTINCT." },
+      { "lesson_id": "L-USQL-2", "title": "GROUP BY Statements & Joins", "duration_minutes": 90, "content": "Aggregate calculations and multi-table joins." }
+    ]
+  },
+  {
+    "course_id": "FCC-PY-01",
+    "title": "Scientific Computing with Python Certification",
+    "provider": "freeCodeCamp",
+    "platform": "freeCodeCamp",
+    "description": "100% free curriculum covering Python data structures, algorithms, and 5 mandatory verified projects.",
+    "skill": "Python",
+    "level": 2,
+    "hours": 60.0,
+    "cost": 0.0,
+    "currency": "USD",
+    "pricing_model": "free",
+    "subscription_monthly_cost": null,
+    "prerequisite_id": "C101",
+    "is_foundation": false,
+    "source_url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+    "catalogue_status": "approved",
+    "source_verification_status": "verified",
+    "last_checked_date": "2026-10-25",
+    "certificate_info": {
+      "available": true,
+      "type": "assessed_certificate",
+      "issuer": "freeCodeCamp.org",
+      "is_included_in_price": true,
+      "separate_certificate_fee": 0.0,
+      "verification_url": "https://www.freecodecamp.org/certification",
+      "exam_requirements": "Pass all unit tests for the 5 scientific computing portfolio projects."
+    },
+    "lessons": [
+      { "lesson_id": "L-FCC-1", "title": "Arithmetic Formatter Project", "duration_minutes": 120, "content": "Function creation with string formatting." },
+      { "lesson_id": "L-FCC-2", "title": "Time Calculator Project", "duration_minutes": 120, "content": "Algorithm to add duration to 12-hour clock." }
+    ]
+  },
+  {
+    "course_id": "COUR-ML-01",
+    "title": "Machine Learning Specialization",
+    "provider": "DeepLearning.AI / Stanford",
+    "platform": "Coursera",
+    "description": "Foundational machine learning program covering supervised learning, neural networks, and recommender systems.",
+    "skill": "Machine Learning",
+    "level": 3,
+    "hours": 65.0,
+    "cost": 147.0,
+    "currency": "USD",
+    "pricing_model": "subscription",
+    "subscription_monthly_cost": 49.0,
+    "prerequisite_id": "C102",
+    "is_foundation": false,
+    "source_url": "https://www.coursera.org/specializations/machine-learning-introduction",
+    "catalogue_status": "approved",
+    "source_verification_status": "verified",
+    "last_checked_date": "2026-10-25",
+    "certificate_info": {
+      "available": true,
+      "type": "professional_certificate",
+      "issuer": "DeepLearning.AI & Stanford Online",
+      "is_included_in_price": true,
+      "separate_certificate_fee": 0.0,
+      "verification_url": "https://www.coursera.org/verify",
+      "exam_requirements": "Passing grade >= 80% on all Python programming labs and quizzes."
+    },
+    "lessons": [
+      { "lesson_id": "L-CML-1", "title": "Supervised Machine Learning: Regression", "duration_minutes": 120, "content": "Linear regression, cost functions, and gradient descent." },
+      { "lesson_id": "L-CML-2", "title": "Classification and Logistic Regression", "duration_minutes": 120, "content": "Decision boundaries, overfitting, and regularization." }
+    ]
+  }
+]
